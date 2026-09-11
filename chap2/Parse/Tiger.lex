@@ -46,7 +46,46 @@ Yylex(java.io.InputStream s, ErrorMsg e) {
 
 
 %%
-" "	{}
+[\t\v\f\r ]+	{}
+"/*"([^*]|\*+[^*/])*\*+"/" {}
 \n	{newline();}
+
+"while" {return tok(sym.WHILE, null);}
+"for" {return tok(sym.FOR, null);}
+"to" {return tok(sym.TO, null);}
+"break" {return tok(sym.BREAK, null);}
+"let" {return tok(sym.LET, null);}
+"in" {return tok(sym.IN, null);}
+"end" {return tok(sym.END, null);}
+"type" {return tok(sym.TYPE, null);}
+"array" {return tok(sym.ARRAY, null);}
+"if" {return tok(sym.IF, null);}
+"then" {return tok(sym.THEN, null);}
+"else" {return tok(sym.ELSE, null);}
+"do" {return tok(sym.DO, null);}
+"of" {return tok(sym.OF, null);}
+"nil" {return tok(sym.NIL);}
+
+
 ","	{return tok(sym.COMMA, null);}
+":" {return tok(sym.COLON, null);}
+";" {return tok(sym.SEMICOLON, null);}
+"(" {return tok(sym.LPAREN, null);}
+")" {return tok(sym.RPAREN, null);}
+"[" {return tok(sym.LBRACE, null);}
+"]" {return tok(sym.RBRACE, null);}
+"{" {return tok(sym.LBRACK, null);}
+"}" {return tok(sym.RBRACK, null);}
+"." {return tok(sym.DOT, null);}
+"+" {return tok(sym.PLUS, null);}
+"-" {return tok(sym.MINUS, null);}
+"*" {return tok(sym.TIMES, null);}
+"/" {return tok(sym.DIVIDE, null);}
+"=" {return tok(sym.EQ, null);}
+"<" {return tok(sym.LT, null);}
+">" {return tok(sym.GT, null);}
+"<>" {return tok(sym.NIL, null);}
+
+
+
 . { err("Illegal character: " + yytext()); }
