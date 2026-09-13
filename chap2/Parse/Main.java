@@ -69,31 +69,80 @@ public class Main {
      symnames[sym.RBRACE] = "RBRACE";
      symnames[sym.EQ] = "EQ";
      symnames[sym.AUTO] = "AUTO";
-symnames[sym.DOUBLE] = "DOUBLE";
-symnames[sym.STRUCT] = "STRUCT";
-symnames[sym.LONG] = "LONG";
-symnames[sym.SWITCH] = "SWITCH";
-symnames[sym.CASE] = "CASE";
-symnames[sym.ENUM] = "ENUM";
-symnames[sym.REGISTER] = "REGISTER";
-symnames[sym.TYPEDEF] = "TYPEDEF";
-symnames[sym.CHAR] = "CHAR";
-symnames[sym.EXTERN] = "EXTERN";
-symnames[sym.RETURN] = "RETURN";
-symnames[sym.UNION] = "UNION";
-symnames[sym.CONST] = "CONST";
-symnames[sym.FLOAT] = "FLOAT";
-symnames[sym.SHORT] = "SHORT";
-symnames[sym.UNSIGNED] = "UNSIGNED";
-symnames[sym.CONTINUE] = "CONTINUE";
-symnames[sym.SIGNED] = "SIGNED";
-symnames[sym.VOID] = "VOID";
-symnames[sym.DEFAULT] = "DEFAULT";
-symnames[sym.GOTO] = "GOTO";
-symnames[sym.SIZEOF] = "SIZEOF";
-symnames[sym.VOLATILE] = "VOLATILE";
-symnames[sym.STATIC] = "STATIC";
-symnames[sym.FUN] = "FUN";
+     symnames[sym.DOUBLE] = "DOUBLE";
+     symnames[sym.STRUCT] = "STRUCT";
+      symnames[sym.LONG] = "LONG";
+      symnames[sym.SWITCH] = "SWITCH";
+      symnames[sym.CASE] = "CASE";
+      symnames[sym.ENUM] = "ENUM";
+      symnames[sym.REGISTER] = "REGISTER";
+      symnames[sym.TYPEDEF] = "TYPEDEF";
+      symnames[sym.CHAR] = "CHAR";
+      symnames[sym.EXTERN] = "EXTERN";
+      symnames[sym.RETURN] = "RETURN";
+      symnames[sym.UNION] = "UNION";
+      symnames[sym.CONST] = "CONST";
+      symnames[sym.FLOAT] = "FLOAT";
+      symnames[sym.SHORT] = "SHORT";
+      symnames[sym.UNSIGNED] = "UNSIGNED";
+      symnames[sym.CONTINUE] = "CONTINUE";
+      symnames[sym.SIGNED] = "SIGNED";
+      symnames[sym.VOID] = "VOID";
+      symnames[sym.DEFAULT] = "DEFAULT";
+      symnames[sym.GOTO] = "GOTO";
+      symnames[sym.SIZEOF] = "SIZEOF";
+      symnames[sym.VOLATILE] = "VOLATILE";
+      symnames[sym.STATIC] = "STATIC";
+      symnames[sym.FUN] = "FUN";
+
+      symnames[sym.INCREMENT] = "INCREMENT";
+      symnames[sym.DECREMENT] = "DECREMENT";
+      symnames[sym.ARROW] = "ARROW";
+
+      symnames[sym.LSHIFTASSIGN] = "LSHIFTASSIGN";
+      symnames[sym.LSHIFTASSIGN] = "LSHIFTASSIGN";
+      symnames[sym.RSHIFTASSIGN] = "RSHIFTASSIGN";
+
+      symnames[sym.ADDASSIGN] = "ADDASSIGN";
+      symnames[sym.SUBASSIGN] = "SUBASSIGN";
+      symnames[sym.MULASSIGN] = "MULASSIGN";
+      symnames[sym.DIVASSIGN] = "DIVASSIGN";
+      symnames[sym.MODASSIGN] = "MODASSIGN";
+
+      symnames[sym.BWISEANDASSIGN] = "BWISEANDASSIGN";
+      symnames[sym.BWISEXORASSIGN] = "BWISEXORASSIGN";
+      symnames[sym.BWISEORASSIGN] = "BWISEORASSIGN";
+
+      symnames[sym.LSHIFT] = "LSHIFT";
+      symnames[sym.RSHIFT] = "RSHIFT";
+
+      symnames[sym.LE] = "LE";
+      symnames[sym.GE] = "GE";
+      symnames[sym.EQ] = "EQ";
+      symnames[sym.NEQ] = "NEQ";
+
+      symnames[sym.AND] = "AND";
+      symnames[sym.OR] = "OR";
+
+      symnames[sym.PLUS] = "PLUS";
+      symnames[sym.PLUS] = "PLUS";
+      symnames[sym.MINUS] = "MINUS";
+      symnames[sym.TIMES] = "TIMES";
+      symnames[sym.DIVIDE] = "DIVIDE";
+      symnames[sym.MODULUS] = "MODULUS";
+
+      symnames[sym.ASSIGN] = "ASSIGN";
+
+      symnames[sym.LT] = "LT";
+      symnames[sym.GT] = "GT";
+
+      symnames[sym.BITWISEAND] = "BITWISEAND";
+      symnames[sym.BWISEOR] = "BWISEOR";
+      symnames[sym.BWISEXOR] = "BWISEXOR";
+
+      symnames[sym.TILDE] = "TILDE";
+      symnames[sym.NOT] = "NOT";
    }
 
 }
+ 

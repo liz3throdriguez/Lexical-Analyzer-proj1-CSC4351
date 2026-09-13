@@ -93,4 +93,49 @@ Yylex(java.io.InputStream s, ErrorMsg e) {
 "fun"       { return tok(sym.FUN); }
 
 [a-zA-Z_][a-zA-Z0-9_]*    { return tok(sym.ID, yytext()); }
+"++"  { return tok(sym.INCREMENT); }
+"--"  { return tok(sym.DECREMENT); }
+"->"  { return tok(sym.ARROW); }
+
+"<<=" { return tok(sym.LSHIFTASSIGN); }
+">>=" { return tok(sym.RSHIFTASSIGN); }
+
+"+="  { return tok(sym.ADDASSIGN); }
+"-="  { return tok(sym.SUBASSIGN); }
+"*="  { return tok(sym.MULASSIGN); }
+"/="  { return tok(sym.DIVASSIGN); }
+"%="  { return tok(sym.MODASSIGN); }
+
+"&="  { return tok(sym.BWISEANDASSIGN); }
+"^="  { return tok(sym.BWISEXORASSIGN); }
+"|="  { return tok(sym.BWISEORASSIGN); }
+
+"<<"  { return tok(sym.LSHIFT); }
+">>"  { return tok(sym.RSHIFT); }
+
+"<="  { return tok(sym.LE); }
+">="  { return tok(sym.GE); }
+"=="  { return tok(sym.EQ); }
+"!="  { return tok(sym.NEQ); }
+
+"&&"  { return tok(sym.AND); }
+"||"  { return tok(sym.OR); }
+
+"+"   { return tok(sym.PLUS); }
+"-"   { return tok(sym.MINUS); }
+"*"   { return tok(sym.TIMES); }
+"/"   { return tok(sym.DIVIDE); }
+"%"   { return tok(sym.MODULUS); }
+
+"="   { return tok(sym.ASSIGN); }
+
+"<"   { return tok(sym.LT); }
+">"   { return tok(sym.GT); }
+
+"&"   { return tok(sym.BITWISEAND); }
+"|"   { return tok(sym.BWISEOR); }
+"^"   { return tok(sym.BWISEXOR); }
+
+"~"   { return tok(sym.TILDE); }
+"!"   { return tok(sym.NOT); }
 . { err("Illegal character: " + yytext()); }
