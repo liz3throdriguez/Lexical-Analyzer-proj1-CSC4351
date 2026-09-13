@@ -49,4 +49,5 @@ Yylex(java.io.InputStream s, ErrorMsg e) {
 " "	{}
 \n	{newline();}
 ","	{return tok(sym.COMMA, null);}
+[a-zA-Z_][a-zA-Z0-9_]*    { return tok(sym.ID, yytext()); }
 . { err("Illegal character: " + yytext()); }
