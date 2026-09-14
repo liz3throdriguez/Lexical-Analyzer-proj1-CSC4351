@@ -138,4 +138,21 @@ Yylex(java.io.InputStream s, ErrorMsg e) {
 
 "~"   { return tok(sym.TILDE); }
 "!"   { return tok(sym.NOT); }
+
+
+\[    { return tok(sym.LBRACK); }
+\]    { return tok(sym.RBRACK); }
+
+\(    { return tok(sym.LPAREN); }
+\)    { return tok(sym.RPAREN); }
+
+\{    { return tok(sym.LBRACE); }
+\}    { return tok(sym.RBRACE); }
+
+";"   { return tok(sym.SEMICOLON); }
+":"   { return tok(sym.COLON); }
+
+\.\.\. { return tok(sym.ELIPSES); }
+\.      { return tok(sym.PERIOD); }
+
 . { err("Illegal character: " + yytext()); }

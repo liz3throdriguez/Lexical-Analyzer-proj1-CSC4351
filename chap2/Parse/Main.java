@@ -142,6 +142,22 @@ public class Main {
 
       symnames[sym.TILDE] = "TILDE";
       symnames[sym.NOT] = "NOT";
+
+      // Punctuators
+      symnames[sym.LBRACK] = "LBRACK";
+      symnames[sym.RBRACK] = "RBRACK";
+
+      symnames[sym.LPAREN] = "LPAREN";
+      symnames[sym.RPAREN] = "RPAREN";
+
+      symnames[sym.LBRACE] = "LBRACE";
+      symnames[sym.RBRACE] = "RBRACE";
+
+      symnames[sym.SEMICOLON] = "SEMICOLON";
+      symnames[sym.COLON] = "COLON";
+
+      symnames[sym.ELIPSES] = "ELIPSES";
+      symnames[sym.PERIOD] = "PERIOD";
    }
 
 }
